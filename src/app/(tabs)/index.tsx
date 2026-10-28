@@ -13,12 +13,9 @@ const Home = () => {
     error:moviesError
   }  = useFetch(() => fetchMovies({query:''}))
   return (
-    <View className="flex-1 justify-center items-center">
+    <View className="flex-1 justify-center items-center p-4">
           {moviesLoading ? (<ActivityIndicator size="large" className="mt-10 self-center"/>) : moviesError ? (<Text>Error: {moviesError?.message}</Text>) : (
-      <ScrollView>
-            <View className="p-4">          <SearchBar onPress={() => router.push("/search")} placeholder="Search for a movie"/>
-              <>
-            <Text className="text-lg font-bold mt-5 mb-3">Latest Movies</Text>
+           
             <FlatList
             data={movies}
             renderItem={({item}:{item:Movie}) => (<MovieCard {...item}/>)}
@@ -30,10 +27,12 @@ const Home = () => {
               paddingRight:5,
               marginBottom:10
             }}
+            // contentContainerStyle={{padding:4}}
+            ListHeaderComponent={<View >
+                <SearchBar onPress={() => router.push("/search")} placeholder="Search for a movie" />
+                <Text className="text-lg font-bold mt-5 mb-3">Latest Movies</Text>
+            </View>}
             />
-            </>
-          </View>
-          </ScrollView>
         )}
     </View>
   )
