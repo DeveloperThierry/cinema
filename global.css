@@ -1,3 +1,131 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+:root {
+  --background: 248 245 245;
+  --foreground: 6 4 4;
+  --card: 255 255 255;
+  --card-foreground: 15 4 1;
+  --popover: 250 240 237;
+  --popover-foreground: 15 4 1;
+  --primary: 203 55 19;
+  --primary-foreground: 254 243 241;
+  --secondary: 243 141 104;
+  --secondary-foreground: 94 31 8;
+  --muted: 23 163 152;
+  --muted-foreground: 19 134 125;
+  --accent: 102 44 145;
+  --accent-foreground: 208 177 231;
+  --destructive: 255 56 43;
+  --destructive-foreground: 255 255 255;
+  --border: 241 234 232;
+  --input: 224 208 204;
+  --ring: 241 234 232;
+
+  --android-background: 250 252 255;
+  --android-foreground: 27 28 29;
+  --android-card: 255 255 255;
+  --android-card-foreground: 24 28 35;
+  --android-popover: 215 217 228;
+  --android-popover-foreground: 0 0 0;
+  --android-primary: 0 112 233;
+  --android-primary-foreground: 255 255 255;
+  --android-secondary: 176 201 255;
+  --android-secondary-foreground: 28 60 114;
+  --android-muted: 216 226 255;
+  --android-muted-foreground: 0 26 65;
+  --android-accent: 169 73 204;
+  --android-accent-foreground: 255 255 255;
+  --android-destructive: 186 26 26;
+  --android-destructive-foreground: 255 255 255;
+  --android-border: 118 122 127;
+  --android-input: 197 201 206;
+  --android-ring: 118 122 127;
+
+  --web-background: 250 252 255;
+  --web-foreground: 27 28 29;
+  --web-card: 255 255 255;
+  --web-card-foreground: 24 28 35;
+  --web-popover: 215 217 228;
+  --web-popover-foreground: 0 0 0;
+  --web-primary: 0 112 233;
+  --web-primary-foreground: 255 255 255;
+  --web-secondary: 176 201 255;
+  --web-secondary-foreground: 28 60 114;
+  --web-muted: 216 226 255;
+  --web-muted-foreground: 0 26 65;
+  --web-accent: 169 73 204;
+  --web-accent-foreground: 255 255 255;
+  --web-destructive: 186 26 26;
+  --web-destructive-foreground: 255 255 255;
+  --web-border: 118 122 127;
+  --web-input: 197 201 206;
+  --web-ring: 118 122 127;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 5 1 0;
+    --foreground: 254 248 246;
+    --card: 39 24 20;
+    --card-foreground: 254 248 246;
+    --popover: 47 40 38;
+    --popover-foreground: 254 248 246;
+    --primary: 238 108 77;
+    --primary-foreground: 0 0 0;
+    --secondary: 243 141 104;
+    --secondary-foreground: 94 31 8;
+    --muted: 23 163 152;
+    --muted-foreground: 19 134 125;
+    --accent: 159 96 205;
+    --accent-foreground: 208 177 231;
+    --destructive: 254 67 54;
+    --destructive-foreground: 255 255 255;
+    --border: 69 59 57;
+    --input: 83 71 68;
+    --ring: 69 59 57;
+
+    --android-background: 24 28 32;
+    --android-foreground: 221 227 233;
+    --android-card: 70 74 78;
+    --android-card-foreground: 197 201 206;
+    --android-popover: 70 74 78;
+    --android-popover-foreground: 197 201 206;
+    --android-primary: 0 69 148;
+    --android-primary-foreground: 214 224 255;
+    --android-secondary: 28 60 114;
+    --android-secondary-foreground: 255 255 255;
+    --android-muted: 29 27 29;
+    --android-muted-foreground: 230 224 228;
+    --android-accent: 83 0 111;
+    --android-accent-foreground: 255 255 255;
+    --android-destructive: 147 0 10;
+    --android-destructive-foreground: 255 255 255;
+    --android-border: 143 148 153;
+    --android-input: 70 74 78;
+    --android-ring: 143 148 153;
+
+    --web-background: 24 28 32;
+    --web-foreground: 221 227 233;
+    --web-card: 70 74 78;
+    --web-card-foreground: 197 201 206;
+    --web-popover: 70 74 78;
+    --web-popover-foreground: 197 201 206;
+    --web-primary: 0 69 148;
+    --web-primary-foreground: 214 224 255;
+    --web-secondary: 28 60 114;
+    --web-secondary-foreground: 255 255 255;
+    --web-muted: 29 27 29;
+    --web-muted-foreground: 230 224 228;
+    --web-accent: 83 0 111;
+    --web-accent-foreground: 255 255 255;
+    --web-destructive: 147 0 10;
+    --web-destructive-foreground: 255 255 255;
+    --web-border: 143 148 153;
+    --web-input: 70 74 78;
+    --web-ring: 143 148 153;
+  }
+}
+}
