@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 @layer base {
 :root {
   --background: 248 245 245;
@@ -128,4 +128,4 @@
     --web-ring: 143 148 153;
   }
 }
-}
+} */
