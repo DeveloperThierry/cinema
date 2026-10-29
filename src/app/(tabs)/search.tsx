@@ -2,8 +2,8 @@ import MovieCard from "@/components/MovieCard";
 import SearchBar from "@/components/SearchBar";
 import { useEffect, useState } from "react";
 import { ActivityIndicator, FlatList, Text, View } from "react-native";
-import { fetchMovies } from "../services/api";
-import useFetch from "../services/useFetch";
+import { fetchMovies } from "../../services/api";
+import useFetch from "../../services/useFetch";
 
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -16,14 +16,15 @@ const Search = () => {
   } = useFetch(() => fetchMovies({ query: searchQuery }), false);
 
   useEffect(() => {
-    const func = async () => {
-      if (searchQuery.trim()) {
-        await loadMovies();
-      } else {
-        reset();
-      }
-    };
-    func();
+    const timeoutId = setTimeout(  
+      async () => {
+       if (searchQuery.trim()) {
+         await loadMovies();
+       } else {
+         reset();
+       }
+     }, 500)
+    return () => clearTimeout(timeoutId);
   }, [searchQuery]);
   return (
     <View className="flex-1  ">
