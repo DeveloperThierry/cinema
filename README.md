@@ -1,56 +1,66 @@
-# Welcome to your Expo app 👋
+# 🎬 Movie Discovery App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/your-username/your-repo)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Get started
+A modern, cross-platform mobile application built with React Native and Expo for discovering, searching, and tracking popular movies.
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+*   **🍿 Trending Movies:** Automatically displays a list of popular movies fetched from the TMDB API.
+*   **🔍 Advanced Search:** Real-time search functionality with performance-optimized queries to find movies quickly.
+*   **🎬 Movie Details:** A comprehensive view for each movie, including ratings, overviews, and cast information.
+*   **📊 User Metrics:** Backend integration with Appwrite to track search activity and user interactions.
 
-2. Start the app
+## 🚀 Tech Stack
 
-   ```bash
-   npx expo start
-   ```
+*   **React Native:** A framework for building native apps using React.
+*   **Expo:** A platform for making universal React applications.
+*   **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
+*   **Tailwind CSS (NativeWind):** A utility-first CSS framework for rapidly building custom designs.
+*   **Appwrite:** A backend platform for building web, mobile, and flutter applications.
+*   **TMDB API:** The Movie Database (TMDb) is a community-built movie and TV database.
 
-In the output, you'll find options to open the app in a
+## 📸 Screenshots
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+*(Add your screenshots here)*
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📦 Installation
 
-## Get a fresh project
+1.  **Prerequisites:** Ensure you have Node.js and npm installed on your machine.
+2.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/your-repo.git
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Environment Setup:** Create a `.env` file in the root directory and add your Appwrite and TMDB API keys:
+    ```
+    APPWRITE_API_KEY=your_appwrite_api_key
+    TMDB_API_KEY=your_tmdb_api_key
+    ```
+5.  **Start the App:**
+    ```bash
+    npx expo start
+    ```
+    Then, scan the QR code using the Expo Go app on your phone.
 
-When you're ready, run:
+## 🕹️ Usage
+
+To run the application in development mode, use the following command:
 
 ```bash
-npm run reset-project
+npx expo start
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+Use the bottom navigation to switch between the **Home**, **Search**, and **Saved** screens.
 
-### Other setup steps
+## 🤝 Contributing
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+We welcome contributions to improve this project! Please check our `CONTRIBUTING.md` file for guidelines on how to submit pull requests.
 
-## Learn more
+## 📝 License
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
