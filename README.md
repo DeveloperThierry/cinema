@@ -24,6 +24,10 @@ A modern, cross-platform mobile application built with React Native and Expo for
 ## 📸 Screenshots
 
 *(Add your screenshots here)*
+![home](assets/images/home.jpg)
+![search](assets/images/search.jpg)
+![details](assets/images/details.jpg)
+
 
 ## 📦 Installation
 
