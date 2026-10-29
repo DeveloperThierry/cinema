@@ -50,34 +50,7 @@ const TabLayout = () => {
           ),
         }}
       />
-      <Tabs.Screen
-        name="saved"
-        options={{
-          title: "Saved",
-          headerShown: false,
-          tabBarIcon: ({ focused, color }) => (
-            <Ionicons
-              name={focused ? "bookmark" : "bookmark-outline"}
-              size={24}
-              color={focused ? "#183a37" : ""}
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: "Profile",
-          headerShown: false,
-          tabBarIcon: ({ focused, color }) => (
-            <Ionicons
-              name={focused ? "people" : "people-outline"}
-              size={24}
-              color={focused ? "#183a37" : ""}
-            />
-          ),
-        }}
-      />
+      
     </Tabs>
   );
 };
